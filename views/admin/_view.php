@@ -59,7 +59,7 @@ $renderedHtml = $htmlParser->render();
                 <?= Html::a(Yii::t('CodeboxModule.base', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary btn-sm', 'data-toggle' => 'modal', 'data-target' => '#globalModal']); ?>
                 <?= Html::a(Yii::t('CodeboxModule.base', 'Delete'), ['delete', 'id' => $model->id], [
                     'class' => 'btn btn-danger btn-sm',
-                    'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
+                    'data-confirm' => Yii::t('CodeboxModule.base', 'Are you sure you want to delete this item?'),
                     'data-method' => 'post',
                 ]); ?>
             </div>
