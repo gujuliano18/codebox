@@ -12,7 +12,7 @@ use humhub\libs\Html;
     <?php $form = ActiveForm::begin(['options' => ['data-pjax' => 0]]); ?>
     <div class="modal-body">
         <div class="form-group">
-            <?= $form->field($model, 'title')->textInput(['class' => 'form-control', 'placeholder' => 'Title', 'disabled' => false])->label(true) ?>
+            <?= $form->field($model, 'title')->textInput(['class' => 'form-control', 'placeholder' => Yii::t('CodeboxModule.base', 'Title'), 'disabled' => false])->label(true) ?>
             <?= $form->field($model, 'htmlCode')->widget(CodeMirrorInputWidget::class); ?>
             <?= $form->field($model, 'sortOrder')->widget(SortOrderField::class) ?>
         </div>
